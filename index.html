@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crypto Price Checker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Crypto Price Checker</h1>
+    <label for="crypto">Cryptocurrency:</label>
+    <select id="crypto">
+      <!-- Options will be populated dynamically -->
+    </select>
+    <label for="fiat">Fiat Currency:</label>
+    <select id="fiat">
+        <option value="inr">INR</option>
+      <option value="usd">USD</option>
+      <option value="eur">EUR</option>
+      <option value="gbp">GBP</option> <!-- Added INR option -->
+      <!-- Add more options as needed -->
+    </select>
+    <button onclick="getCryptoPrice()">Check Price</button>
+    <div class="result" id="result"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
